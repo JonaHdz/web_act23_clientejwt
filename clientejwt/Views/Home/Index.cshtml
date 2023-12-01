@@ -1,0 +1,59 @@
+﻿@model List<UsuarioViewModel>
+@{
+    ViewData["title"] = "Lista de usuario";
+}
+
+
+<h1 class="h3 text-center text-success">Desarrollo de Sistemas Web</h1>
+<h2 class="h5 text-center text-muted">Licenciatura en ingeniería de software</h2>
+@if (Model.Count() > 0)
+{
+    <h4 class="text-center mt-5 mb-3">Usuarios desde el backed</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered small">
+            <thead class="table-light">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Nombrecompleto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Email)
+                    </th>
+                    <th>
+                        Roles
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <strong>@Html.DisplayFor(modelItem => item.Id)</strong>
+                        </td>
+                        <td>
+                            <strong>@Html.DisplayFor(modelItem => item.Nombrecompleto)</strong>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rol)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="mt-5">
+        <div class="alert alert-warning" role="alert">
+            No se ha podido conectar al backend. <a asp-controller="Cuentas" asp-action="Login">Iniciar sesión</a>
+        </div>
+    </div>
+}

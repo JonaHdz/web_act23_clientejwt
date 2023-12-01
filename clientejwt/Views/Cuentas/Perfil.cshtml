@@ -1,0 +1,25 @@
+﻿@model UsuarioViewModel
+@{
+    ViewData["Title"] = "Perfil de usuario";
+}
+
+<h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+<div class="card text-dark bg-light mt-3">
+    <div class="card-header">
+        @Model.Nombrecompleto
+    </div>
+    <div class="card-body">
+        <div class="form-text mb-2">
+            <div class="text-dark">@Html.DisplayNameFor(model => model.Email)</div>
+            @Model.Email
+        </div>
+        <div class="form-text mb-2">
+            <div class="text-dark">@Html.DisplayNameFor(model => model.Rol)</div>
+            @Model.Rol
+        </div>
+    </div>
+    <div class="card-footer small">
+        @ViewData["token"]
+    </div>
+</div>

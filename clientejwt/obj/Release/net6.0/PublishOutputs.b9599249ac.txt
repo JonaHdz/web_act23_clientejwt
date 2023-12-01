@@ -1,0 +1,7 @@
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\clientejwt.exe
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\appsettings.json
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\clientejwt.dll
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\clientejwt.deps.json
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\clientejwt.runtimeconfig.json
+C:\Users\jon10\Desktop\Act23\clientejwt\bin\Release\net6.0\publish\clientejwt.pdb
